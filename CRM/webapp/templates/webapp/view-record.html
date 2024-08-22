@@ -1,0 +1,33 @@
+{% extends 'webapp/base.html' %}
+{% block content %}
+<div class="container mt-4 ">
+    <div class="card rounded">
+        <div class="card-header">
+            Record Details
+        </div>
+        
+        <div class="card-body">
+            <strong>
+                {{ record.first_name }}
+                {{ record.last_name }}
+            </strong>
+            <hr>
+            <p><strong>ID:</strong> {{ record.id }}</p>
+            <p><strong>Email:</strong> {{ record.email }}</p>
+            <p><strong>Phone:</strong> {{ record.phone }}</p>
+            <p><strong>Address:</strong> {{ record.address }}</p>
+            <p><strong>City:</strong> {{ record.city }}</p>
+            <p><strong>Province:</strong> {{ record.province }}</p>
+            <p><strong>Country:</strong> {{ record.country }}</p>
+            <p><strong>Date Joined:</strong> {{ record.creation_date|date:"F j, Y, g:i a" }}</p>
+        </div>
+    </div>
+    <br>
+    <a href="{% url 'dashboard' %}"  class="btn btn-success rounded" >Return</a>  
+    &nbsp;&nbsp;
+    <a href="{% url 'update-record' record.id %}"  class="btn btn-info rounded" >Update</a>  
+    &nbsp;&nbsp;
+    <a href="{% url 'delete-record' record.id%}"  class="btn btn-danger rounded" >Delete</a>  
+
+</div>
+{% endblock %}

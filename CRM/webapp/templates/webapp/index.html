@@ -1,0 +1,17 @@
+{% extends "webapp/base.html" %}
+
+{% block content %}
+
+    <body>
+        <div class='text-center'>
+            <br>
+            <br>
+            <h1>Customer Record Management</h1>
+            <h4>Keep track of your records Effectively.</h4>
+            <hr>
+            {% comment %} <button type="button" class='btn btn-primery' href="{% url ' ' %}">Create Your Account</button> {% endcomment %}
+            <a type="button" class='btn btn-danger rounded' href="{% url 'register' %}">Create Your Account</a>
+
+        </div>
+    </body>
+{% endblock  %}
