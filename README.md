@@ -9,9 +9,9 @@ This project is a Record Management Dashboard built using the Django framework. 
 #### Message Notifications for Success Actions (e.g., record created, updated)
 #### Integrated with Bootstrap for a clean UI
 ### Technologies Used
-Django: Backend framework for handling data, views, and user authentication.
-HTML/CSS: Frontend for creating the structure and styling of the application.
-Bootstrap: Used for styling, layout, and responsiveness.
-JavaScript: Handles dynamic behavior like notification timing.
-SQLite: Default database for storing records.
-Django Messages Framework: For displaying success and error notifications.
+#### Django: Backend framework for handling data, views, and user authentication.
+#### HTML/CSS: Frontend for creating the structure and styling of the application.
+#### Bootstrap: Used for styling, layout, and responsiveness.
+#### JavaScript: Handles dynamic behavior like notification timing.
+#### SQLite: Default database for storing records.
+#### Django Messages Framework: For displaying success and error notifications.
